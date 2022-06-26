@@ -1,0 +1,18 @@
+Tables Exercise
+
+<script>
+    function buildTable(multiplier) {
+        let tableMultiplier = '  ';
+        for (let i = 1; i <= 10; i++){
+            tableMultiplier += '  ' + i*multiplier;
+        }
+        return tableMultiplier;
+    }
+
+    let result = '';
+
+    for (let i = 1; i <= 10; i++){
+        result += buildTable(i) + '\n';
+    }
+    console.log(result);
+</script>
